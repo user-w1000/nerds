@@ -1,0 +1,225 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    background: white;
+}
+.header{
+    padding: 0;
+    background: #eee;
+}
+.center-wrapper{
+	width: 880px;
+	margin: 0 auto;
+}
+.center-wrapper:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.logo-nerds-scroll{
+	display: none;
+}
+.logo-nerds-absolute{
+	position: relative;	
+	display: block;
+	float: left;
+	width: 140px;
+	height: 60px;
+	background: url('../img/logo-nerds-1.png') left bottom no-repeat;
+}
+.main-menu{
+	display: inline-block;
+	position: relative;
+	font-size: 0;	
+	list-style: none;
+	margin-left: 160px;	
+	padding: 0;
+}
+.main-menu li{
+	display: inline-block;
+	margin-top: 25px;
+}
+.main-menu li.active,
+.main-menu li:hover{
+    box-shadow: 1px 20px 0 -17px #fb565a;
+}
+.main-menu li.active:hover{
+	box-shadow: 1px 20px 0 -17px #d6494d;
+}
+.main-menu li a,
+.cart-menu-enter{
+	display: inline-block;		
+	font-weight: 500;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;	
+	padding: 10px 23px;
+}
+.cart-menu{
+	display: inline-block;
+	position: relative;
+}
+.cart-menu-enter{
+	padding-right: 0;
+	margin-left: 38px;
+}
+.cart-menu-enter:before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 35px;
+	top: 13px;
+	background: url('../img/icon-cart.png') 0 0 no-repeat;	
+}
+.slider{
+	clear:both;
+    position: relative;
+    width: 880px;
+    height: 305px;
+    margin: 45px auto 0; 
+}
+.slider-controls{
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 94px;
+    text-align: center;
+    z-index: 100;
+}
+.slider-controls i{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: top;
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-controls .active{
+    background: #c1c1c1;
+}
+.slide{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slide-text{
+	font-size: 16px;
+    width: 480px;
+	height: 150px;
+	overflow: hidden;
+    padding: 20px 0;
+    color: #283136;    
+}
+.slide-title{
+    font-size: 36px;
+    line-height: 1;
+    font-weight: bold;
+    color: black;
+}
+.slide-text p{
+	padding-top: 5px;
+}
+.slide .btn{
+    display: block;
+	position: relative;
+	bottom: 7px;
+    width: 240px;
+    padding: 12px 0;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+    text-align: center;
+}
+.slide .btn:hover{
+	background-color: #d6494d;
+}
+.slides .active{
+	display: block;
+}
+.slide:nth-child(1){
+    background: url('../img/slider-1.png') no-repeat 100% 8%;
+}
+.slide:nth-child(2){
+    background: url('/img/slider-2.png') no-repeat 98% 15%;
+}
+.slide:nth-child(3){
+    background: url('../img/slider-3.png') no-repeat 99% 65%;
+}
+.range-filter{    
+    width: 240px;
+    margin: 100px auto 50px;
+}
+.range-controls{
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.range-controls .scale{
+    margin-top: 39px;
+    height: 2px;
+    background: #d7dcde;
+}
+.range-controls .bar{
+    height: 2px;
+    background: #00ca74;
+}
+.range-controls .toggle{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.range-controls .max-toggle{
+    left: 145px;
+}
+.price-controls{
+    white-space: nowrap;
+}
+.price-controls input{
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #283146;
+    border-radius: 5px;
+}
+.price-controls .min-price{
+    margin-right: 14px;
+}
