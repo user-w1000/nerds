@@ -23,11 +23,22 @@ body{
 	display: table;
 	clear: both;
 }
+.top-menu-scroll{
+	background-color: white;
+	position: fixed;
+	display: none
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
 .logo-nerds-scroll{
 	display: none;
+	position: absolute;
+	vertical-align: middle;
+	margin-top: 33px;
 }
-.logo-nerds-absolute{
-	position: relative;	
+.logo-nerds{
+	position: absolute;	
 	display: block;
 	float: left;
 	width: 140px;
@@ -39,7 +50,7 @@ body{
 	position: relative;
 	font-size: 0;	
 	list-style: none;
-	margin-left: 160px;	
+	margin-left: 300px;	
 	padding: 0;
 }
 .main-menu li{
@@ -95,7 +106,7 @@ body{
     margin-left: -100px;
     bottom: 94px;
     text-align: center;
-    z-index: 100;
+    z-index: 90;
 }
 .slider-controls i{
     display: inline-block;
@@ -131,7 +142,7 @@ body{
 .slide-title{
     font-size: 36px;
     line-height: 1;
-    font-weight: bold;
+    font-weight: 500;
     color: black;
 }
 .slide-text p{
@@ -144,6 +155,7 @@ body{
     width: 240px;
     padding: 12px 0;
     font-size: 12px;
+	font-weight: 500;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -165,6 +177,70 @@ body{
 }
 .slide:nth-child(3){
     background: url('../img/slider-3.png') no-repeat 99% 65%;
+}
+.services{
+	margin-top: 80px;
+	position: relative;
+}
+.service-block{
+	display: block;
+	position: relative;
+	float: left;
+	width: 241px;
+	min-height: 380px;
+	margin-right: 78px;
+	font-size: 0;
+}
+.service-block:nth-child(3n){
+	margin-right: 0;
+}
+.service-block img{
+	width: 240px;
+	height: 124px;
+}
+.service-block h2{
+	margin-top: 20px;	
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.service-block p{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 22px;
+}
+.service-block .btn{
+	display: block;
+	position: relative;
+    width: 140px;
+    padding: 12px 0;
+    font-size: 12px;
+	font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+	margin-top: 25px;
+}
+.service-block:nth-child(1) .btn{
+	    background: #fb565a;
+}
+.service-block:nth-child(1) .btn:hover{
+	    background: #d6494d;
+}
+.service-block:nth-child(2) .btn{
+	    background: #00ca74;
+}
+.service-block:nth-child(2) .btn:hover{
+	    background: #01a25e;
+}
+.service-block:nth-child(3) .btn{
+	    background: #efc84a;
+}
+.service-block:nth-child(3) .btn:hover{
+	    background: #d6ae2c;
 }
 .range-filter{    
     width: 240px;
