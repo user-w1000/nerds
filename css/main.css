@@ -15,6 +15,7 @@ body{
     background: #eee;
 }
 .center-wrapper{
+	position: relative;
 	width: 880px;
 	margin: 0 auto;
 }
@@ -183,7 +184,8 @@ body{
 	position: relative;
 }
 .services>.center-wrapper,
-.studio>.center-wrapper{
+.studio>.center-wrapper,
+.partners>.center-wrapper{
 	border-bottom: 2px solid #eee;
 }
 .service-block{
@@ -296,6 +298,39 @@ body{
 	background: url('../img/studio-img.png') 0 0 no-repeat;
 	top: 5%;	
 	right: 0;
+}
+.partners .partners-logo{
+	position: relative;
+	display: block;	
+	width: 240px;
+	height: 145px;
+	line-height: 145px;
+	float: left;
+	margin: 10px 80px 10px 0;
+}
+.partners .partners-logo:nth-child(3n){
+	margin-right: 0;
+}
+.partners .partners-logo a{
+	display: inline-block;
+	line-height: 1.2;
+	vertical-align: middle;
+	width: 100%;
+}
+.partners .partners-logo:nth-child(1) a{
+	background: url('../img/partners-sprite-gluhanko.png') 0 0 no-repeat;
+	height: 39px;
+}
+.partners .partners-logo:nth-child(2) a{
+	background: url('../img/partners-sprite-htmlacademy.png') 0 0 no-repeat;
+	height: 50px;
+}
+.partners .partners-logo:nth-child(3) a{
+	background: url('../img/partners-sprite-barbershop.png') 0 0 no-repeat;
+	height: 88px;
+}
+.partners .partners-logo a:hover{
+	background-position: -240px;
 }
 .range-filter{    
     width: 240px;
