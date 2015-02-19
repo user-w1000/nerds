@@ -22,7 +22,7 @@ body{
 .center-wrapper:after{
 	content: "";
 	display: table;
-	clear: both;
+	clear: both;	
 }
 .top-menu-scroll{
 	background-color: white;
@@ -332,9 +332,33 @@ body{
 .partners .partners-logo a:hover{
 	background-position: -240px;
 }
+.shop{
+	margin-top: 60px;
+}
+.shop-left-column{
+	float: left;
+	width: 320px;	
+}
+.left-column-data{
+	float: left;
+	width: 320px;
+	margin: 0 0 0 -320px;
+}
+.shop-right-column{
+	width: 560px;
+	float: left;
+	margin: 0 0 0 320px;
+}
+.right-column-data{
+	float: left;
+}
+.left-column-data h2{
+	font-weight: 500;
+	font-size: 19px;
+	text-transform: uppercase;
+}
 .range-filter{    
     width: 240px;
-    margin: 100px auto 50px;
 }
 .range-controls{
     position: relative;
@@ -357,7 +381,7 @@ body{
 .range-controls .toggle{
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: 20px;
     width: 4px;
     height: 4px;
     border: 8px solid white;
@@ -367,10 +391,11 @@ body{
     box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 .range-controls .max-toggle{
-    left: 145px;
+    left: 160px;
 }
 .price-controls{
     white-space: nowrap;
+	font-size: 16px;
 }
 .price-controls input{
     width: 60px;
@@ -388,4 +413,7 @@ body{
 }
 .price-controls .min-price{
     margin-right: 14px;
+}
+.left-column-data>h2{
+	margin-top: 50px;
 }
