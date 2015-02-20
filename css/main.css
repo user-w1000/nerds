@@ -148,6 +148,7 @@ body{
 }
 .slide-text p{
 	padding-top: 5px;
+	color: #283136;
 }
 .slide .btn{
     display: block;
@@ -215,6 +216,7 @@ body{
 	font-size: 16px;
 	line-height: 22px;
 	margin-top: 22px;
+	color: #283136;
 }
 .service-block .btn{
 	display: block;
@@ -269,12 +271,14 @@ body{
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 22px;
+	color: #283136;
 }
 .studio-desc h2{
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-top: 39px;
+	color: #283136;
 }
 .studio-desc ul{
 	list-style: none;	
@@ -288,6 +292,7 @@ body{
 	margin-left: -12px;
 	padding-left: 10px;
 	box-shadow: -34px 0 0 -10px #fb565a;
+	color: #283136;
 }
 .studio-desc:after{
 	content: '';
@@ -396,6 +401,7 @@ body{
 .price-controls{
     white-space: nowrap;
 	font-size: 16px;
+	color: #283136;
 }
 .price-controls input{
     width: 60px;
@@ -415,5 +421,47 @@ body{
     margin-right: 14px;
 }
 .left-column-data>h2{
-	margin-top: 50px;
+	margin-top: 45px;
+}
+.left-column-data ul{
+	list-style: none;
+	padding-left: 0;
+}
+.left-column-data ul li{
+	margin-bottom: 16px;
+}
+input[type="checkbox"],
+input[type="radio"]{
+	display: none;
+}
+input[type="checkbox"]+label,
+input[type="radio"]+label{
+	color: #283136;
+	cursor: pointer;	
+}
+input[type="radio"]+label:before{
+	content: '';
+	display: inline-block;
+	position: relative;
+	width: 20px;
+	height: 20px;	
+	margin: 0 15px 0 0;
+	background: url('../img/radio-sprite.png') 0 0 no-repeat;
+	top: 3px;
+}
+input[type="checkbox"]+label:before{
+	content: '';
+	display: inline-block;
+	position: relative;
+	width: 20px;
+	height: 20px;	
+	margin: 0 15px 0 0;
+	background: url('../img/chkbox-sprite.png') 0 0 no-repeat;	
+	top: 3px;
+}
+input[type="radio"]:checked + label::before{
+	background-position: -20px;
+}
+input[type="checkbox"]:checked + label::before{
+	background-position: -20px;
 }
