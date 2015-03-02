@@ -79,10 +79,14 @@ body{
 .cart-menu{
 	display: inline-block;
 	position: relative;
+	padding-right: 10px;
 }
 .cart-menu-enter{
 	padding-right: 0;
-	margin-left: 38px;
+	margin-left: 36px;
+}
+.cart-menu:hover{
+	box-shadow: 17px 20px 0 -17px #fb565a;
 }
 .cart-menu-enter:before{
 	content: '';
