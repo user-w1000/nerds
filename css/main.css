@@ -600,6 +600,9 @@ input[type="checkbox"]:checked + label::before{
     text-decoration: none;
     border-radius: 3px;
 }
+.shop-buy-btn:hover{
+	background-color: #d6494d;
+}
 .shop-items .item:hover .shop-item-desc{
 	display: block;
 }
