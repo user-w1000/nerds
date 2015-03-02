@@ -636,6 +636,16 @@ input[type="checkbox"]:checked + label::before{
 	margin: 80px auto 0;
 	background: url('../img/contacts-map.png') 0 0 no-repeat;
 }
+.contacts-map:after{
+	content: '';
+	display: block;
+	position: relative;
+	width: 231px;
+	height: 190px;
+	background: url('../img/nerds-pointer.png') 0 0 no-repeat;
+	left: 880px;
+	bottom: 125px;
+}
 .contacts-map .write-us{
 	display: block;
 	position: relative;
@@ -643,7 +653,7 @@ input[type="checkbox"]:checked + label::before{
 	height: 240px;
 	background-color: white;
 	top: 85px;
-	left: 70px;
+	left: 200px;
 }
 .contacts-map .write-us h2{
 	font-size: 16px;
@@ -680,4 +690,64 @@ input[type="checkbox"]:checked + label::before{
 }
 .contacts-map .write-us-popup{
 	display: none;
+}
+.footer .center-wrapper{
+	
+}
+.footer .social-btns{
+	display: block;
+	position: relative;
+	float: left;
+	margin-top: 80px;
+}
+.footer .social-btn{
+	content: '';
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background-color: #f1f1f1;
+	border-radius: 50%;
+	margin-right: 27px;
+}
+.footer .social-btn:hover{
+	background-color: #fb565a;
+}
+.social-btn:after{
+	content: '';
+	display: block;
+	position: relative;
+	width: 25px;
+	height: 25px;	
+	top: 30%;
+	left: 30%;
+}
+.social-btn.vk:after{
+	background: url('../img/social-vk.png') 0 0 no-repeat;
+}
+.social-btn.fb:after{
+	background: url('../img/social-fb.png') 0 0 no-repeat;	
+}
+.social-btn.ig:after{
+	background: url('../img/social-ig.png') 0 0 no-repeat;
+}
+.footer-text{
+	display: block;
+	position: relative;
+	float: left;
+	margin-left: 44px;	
+	margin-top: 70px;
+	margin-bottom: 50px;
+	font-size: 0;
+}
+.footer-text h2{
+	font-size: 36px;
+	font-weight: 500;
+	letter-spacing: 0.018em;	
+	margin: 0;
+}
+.footer-text p{
+	font-size: 16px;
+	letter-spacing: 0;
+	margin: 0;
 }
