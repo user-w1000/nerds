@@ -200,9 +200,9 @@ body{
 	display: block;
 	position: relative;
 	float: left;
-	width: 241px;
+	width: 245px;
 	min-height: 380px;
-	margin-right: 78px;
+	margin-right: 70px;
 	font-size: 0;
 }
 .service-block:nth-child(3n){
